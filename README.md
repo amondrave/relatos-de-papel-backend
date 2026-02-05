@@ -43,3 +43,13 @@ No abrir microservicios individuales como proyectos separados.
 No mover ni eliminar la carpeta lab2_e20.
 
 Cada microservicio es independiente, pero todos pertenecen al mismo repositorio Git.
+
+## ▶️ Orden recomendado de arranque
+
+1 Eureka
+
+2 Gateway / Gateway Filters
+
+3 Inventory Products
+
+4 Inventory Orders

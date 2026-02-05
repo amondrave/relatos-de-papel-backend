@@ -8,6 +8,16 @@
         <option value="$PROJECT_DIR$/../back-end-inventory-products-master/pom.xml" />
         <option value="$PROJECT_DIR$/../back-end-cloud-gateway-filters-master/pom.xml" />
         <option value="$PROJECT_DIR$/../back-end-spring-microservice-archetype-master/pom.xml" />
+        <option value="$PROJECT_DIR$/../back-end-inventory-orders-master/pom.xml" />
+        <option value="$PROJECT_DIR$/back-end-cloud-gateway-filters-master/pom.xml" />
+        <option value="$PROJECT_DIR$/back-end-inventory-orders-master/pom.xml" />
+        <option value="$PROJECT_DIR$/back-end-inventory-products-master/pom.xml" />
+        <option value="$PROJECT_DIR$/back-end-spring-microservice-archetype-master/pom.xml" />
+        <option value="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/pom.xml" />
+        <option value="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/pom.xml" />
+        <option value="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/pom.xml" />
+        <option value="$PROJECT_DIR$/lab2_e20/back-end-spring-microservice-archetype-master/pom.xml" />
+        <option value="$PROJECT_DIR$/lab2_e20/eureka/pom.xml" />
       </list>
     </option>
   </component>

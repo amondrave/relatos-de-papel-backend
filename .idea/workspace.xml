@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f40ea711-c4dc-495e-a6a6-6fb382fc17d3" name="Changes" comment="Edit: Examples as Directory" />
+    <list default="true" id="c6e92936-a5f0-4e86-aeb6-1478cddb96fb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/DWFS 8.1 - Products.postman_collection.json" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/DWFS 8.1 - Products.postman_collection.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/ProductsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/ProductsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/config/BeanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/config/BeanConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/controller/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/controller/ProductsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/controller/model/CreateProductRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/controller/model/CreateProductRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/controller/model/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/controller/model/ProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/ProductJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/ProductJpaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/Consts.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/Consts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/SearchCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/SearchCriteria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/SearchOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/SearchOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/SearchStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/SearchStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/service/ProductsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/service/ProductsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/service/ProductsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/service/ProductsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/eureka/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/eureka/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +49,9 @@
     &quot;accountId&quot;: &quot;6c50a9f6-26f4-411c-a0aa-43ac8b7a2463&quot;
   }
 }</component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
@@ -34,32 +61,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "examples",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Carlos/Documents/repoLab2Des/relatos-de-papel-backend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "configurable.group.language",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.EurekaApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ProductsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Carlos/Documents/repoLab2Des/relatos-de-papel-backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.43488747&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.runner&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -68,6 +101,17 @@
         <option value="QuarkusRunConfigurationType" />
         <option value="SpringBootApplicationConfigurationType" />
       </set>
+    </option>
+    <option name="configurationStatuses">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <map>
+              <entry key="EurekaApplication" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ProductsApplication">
@@ -102,6 +146,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductsApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="inventory-products (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.unir.products.ProductsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="inventory-products" />
@@ -119,9 +171,12 @@
       </set>
     </attachedChunks>
   </component>
+  <component name="StructureViewState">
+    <option name="selectedTab" value="Logical" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f40ea711-c4dc-495e-a6a6-6fb382fc17d3" name="Changes" comment="" />
+      <changelist id="c6e92936-a5f0-4e86-aeb6-1478cddb96fb" name="Changes" comment="" />
       <created>1770256526209</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -130,6 +185,10 @@
       <workItem from="1770302606501" duration="1164000" />
       <workItem from="1770303784899" duration="2565000" />
       <workItem from="1770306374364" duration="1304000" />
+      <workItem from="1770310994994" duration="164000" />
+      <workItem from="1770311210387" duration="724000" />
+      <workItem from="1770311959687" duration="3237000" />
+      <workItem from="1770315414878" duration="383000" />
     </task>
     <task id="LOCAL-00001" summary="Edit: Examples as Directory">
       <option name="closed" value="true" />

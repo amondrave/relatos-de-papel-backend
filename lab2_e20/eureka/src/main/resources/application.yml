@@ -7,6 +7,6 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
   instance:
-    hostname: ${EUREKA_HOST:localhost}
+    hostname: ${EUREKA_HOST:localhost} #intancia por nombre de s
   server:
-    renewal-percent-threshold: 0.90
+    renewal-percent-threshold: 0.90 #90% de heartbeats

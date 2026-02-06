@@ -1,28 +1,112 @@
-# Spring Cloud Gateway Implementation with Custom Filters
+# API Gateway – Spring Cloud Gateway con Custom Filters
 
-This is a Java application built with Spring Boot and Maven. It serves as a gateway for microservices architecture, implementing custom filters for request translation.
+Este proyecto implementa un **API Gateway** basado en **Spring Cloud Gateway**, diseñado para enrutar peticiones hacia microservicios backend mediante **filtros personalizados**.  
+Los filtros permiten definir dinámicamente el método HTTP real (`GET`, `POST`, `PUT`, `PATCH`, `DELETE`) a ejecutar a través del cuerpo de la petición.
 
-## Components
+El Gateway actúa como **punto único de entrada** para los microservicios, centralizando el enrutamiento y la transformación de solicitudes.
 
-The application consists of several components:
+---
 
-- `RequestTranslationFilter`: A custom filter for the Spring Cloud Gateway. It translates incoming requests using the `RequestBodyExtractor` and the `RequestDecoratorFactory`.
+## Arquitectura general
 
-- `RequestBodyExtractor`: Extracts the body of the request and converts it into a `GatewayRequest` object.
+- Spring Cloud Gateway
+- Filtros personalizados (Custom Gateway Filters)
+- Comunicación HTTP directa con microservicios
+- Enrutamiento basado en path (`/ms-books-catalogue/**`) (`/ms-books-payments/**`)
 
-- `RequestDecoratorFactory`: Creates decorators for the `GatewayRequest` object.
+---
 
-- `PostRequestDecorator` and `GetRequestDecorator`: Decorators for the `GatewayRequest` object for POST and GET requests respectively.
+## Requisitos de despliegue
 
-- `GatewayRequest`: Represents a request that is being processed by the gateway.
+### Software requerido
 
-For more detailed information about these components, please refer to the source code documentation.
+- Java 25 o superior  
+- Maven 3.9+  
+- Spring Boot 4.x  
+- Spring Cloud 2025.x  
 
-You can deploy the project on Railway using the following button:
+### Puertos utilizados
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/CWxqH0?referralCode=jesus-unir)
+| Servicio           | Puerto |
+|--------------------|--------|
+| API Gateway        | 8762   |
+| ms-books-catalogue | Definido en el microservicio |
+
+---
+
+## Ejecución del proyecto
+
+### Compilar el proyecto
+
+```bash
+mvn clean package
+```
+
+### Ejecutar el Gateway
+```bash
+mvn spring-boot:run
+```
+
+## Convención de peticiones
+
+El API Gateway utiliza una convención basada en el campo `targetMethod` para determinar el método HTTP real que será ejecutado contra el microservicio destino.
+
+Todas las peticiones hacia el Gateway se realizan mediante **HTTP POST**, y el método original (`GET`, `POST`, `PUT`, `PATCH`, `DELETE`) se define dinámicamente en el cuerpo de la solicitud.
+
+### Estructura mínima del body
+
+```json
+{
+  "targetMethod": "GET"
+}
+```
+```json
+{
+  "targetMethod": "DELETE"
+}
+```
+
+### Estructura con cuerpo de datos
+
+Cuando el método HTTP requiere un cuerpo (POST, PUT, PATCH), este se envía dentro del campo body:
+
+```json
+{
+  "targetMethod": "POST",
+  "body": {
+    "title": "El señor de los anillos: La comunidad del anillo",
+    "author": "J.R.R. Tolkien",
+    "publicationDate": "1954-07-29",
+    "category": "Fantasía",
+    "codIsbn": "9788445071406",
+    "rate": 5,
+    "visible": true
+  }
+}
+```
+```json
+{
+  "targetMethod": "PUT",
+  "body": {
+    "title": "Cien años de soledad Ed6",
+    "author": "Gabriel García Márquez",
+    "publicationDate": "1994-01-30",
+    "category": "Novela",
+    "codIsbn": "9788439726875",
+    "rate": 5,
+    "visible": true
+  }
+}
+```
+```json
+{
+  "targetMethod": "PATCH",
+  "body": {
+    "title": "Cien años de soledad Ed7",
+    "publicationDate": "1996-01-30",
+    "codIsbn": "9788439726899",
+  }
+}
+```
 
 
-If you want to deploy this project within an entire Spring microservices ecosystem, you can use the following button:
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/f6CKpT?referralCode=jesus-unir)

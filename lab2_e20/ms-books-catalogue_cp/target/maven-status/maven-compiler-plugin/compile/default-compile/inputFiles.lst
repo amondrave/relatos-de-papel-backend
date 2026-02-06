@@ -3,6 +3,7 @@ C:\Users\Carlos\Documents\repoLab2Des\relatos-de-papel-backend\lab2_e20\ms-books
 C:\Users\Carlos\Documents\repoLab2Des\relatos-de-papel-backend\lab2_e20\ms-books-catalogue_cp\src\main\java\com\relatospapel\books\controller\BooksController.java
 C:\Users\Carlos\Documents\repoLab2Des\relatos-de-papel-backend\lab2_e20\ms-books-catalogue_cp\src\main\java\com\relatospapel\books\controller\GlobalExceptionHandler.java
 C:\Users\Carlos\Documents\repoLab2Des\relatos-de-papel-backend\lab2_e20\ms-books-catalogue_cp\src\main\java\com\relatospapel\books\controller\model\BookDto.java
+C:\Users\Carlos\Documents\repoLab2Des\relatos-de-papel-backend\lab2_e20\ms-books-catalogue_cp\src\main\java\com\relatospapel\books\controller\model\BookSearchRequest.java
 C:\Users\Carlos\Documents\repoLab2Des\relatos-de-papel-backend\lab2_e20\ms-books-catalogue_cp\src\main\java\com\relatospapel\books\controller\model\CreateBookRequest.java
 C:\Users\Carlos\Documents\repoLab2Des\relatos-de-papel-backend\lab2_e20\ms-books-catalogue_cp\src\main\java\com\relatospapel\books\controller\model\ErrorResponse.java
 C:\Users\Carlos\Documents\repoLab2Des\relatos-de-papel-backend\lab2_e20\ms-books-catalogue_cp\src\main\java\com\relatospapel\books\data\BookJpaRepository.java

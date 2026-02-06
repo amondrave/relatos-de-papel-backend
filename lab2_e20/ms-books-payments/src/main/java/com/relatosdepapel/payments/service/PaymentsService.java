@@ -58,9 +58,9 @@ public class PaymentsService {
     throw new BadRequestException("Compra rechazada: El libro con ID " + book.getId() + " está oculto.");
    }
 
-   if (Objects.isNull(book.getStock()) || book.getStock() <= 0) {
+   /*if (Objects.isNull(book.getStock()) || book.getStock() <= 0) {
     throw new BadRequestException("Compra rechazada: El libro con ID " + book.getId() + " no tiene stock.");
-   }
+   }*/
   }
  }
 

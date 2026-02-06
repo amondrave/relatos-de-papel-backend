@@ -4,67 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6e92936-a5f0-4e86-aeb6-1478cddb96fb" name="Changes" comment="Update: paths changes, remove innecesary data">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="c6e92936-a5f0-4e86-aeb6-1478cddb96fb" name="Changes" comment="Update: Remove Example Projects, Edit:MapperConf">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/unir/orders/OrdersApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/unir/orders/controller/OrdersController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/unir/orders/controller/model/OrderRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/unir/orders/data/OrderJpaRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/unir/orders/data/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/unir/orders/facade/ProductsFacade.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/unir/orders/facade/model/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/unir/orders/service/OrdersService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/unir/orders/service/OrdersServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/DWFS 8.1 - Products.postman_collection.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/ProductsApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/config/BeanConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/controller/ProductsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/controller/model/CreateProductRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/controller/model/ProductDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/ProductJpaRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/ProductRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/model/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/Consts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/SearchCriteria.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/SearchOperation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/SearchStatement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/service/ProductsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/service/ProductsServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/resources/data.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lab2_e20/cloud-gateway-filter-relatospapel/src/main/java/com/relatospapel/gateway/config/MapperConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/cloud-gateway-filter-relatospapel/src/main/java/com/relatospapel/gateway/config/MapperConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/src/main/java/com/relatospapel/books/data/BookJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/src/main/java/com/relatospapel/books/data/BookJpaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/src/main/java/com/relatospapel/books/data/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/src/main/java/com/relatospapel/books/data/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/src/main/java/com/relatospapel/books/service/BooksServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/src/main/java/com/relatospapel/books/service/BooksServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/BooksApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/BooksApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/config/BeanConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/config/BeanConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/controller/BooksController.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/controller/BooksController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/controller/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/controller/GlobalExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/controller/model/BookDto$BookDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/controller/model/BookDto$BookDtoBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/controller/model/BookDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/controller/model/BookDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/controller/model/CreateBookRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/controller/model/CreateBookRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/controller/model/ErrorResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/controller/model/ErrorResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/data/BookJpaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/data/BookJpaRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/data/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/data/BookRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/data/model/Book$BookBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/data/model/Book$BookBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/data/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/data/model/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/data/utils/Consts.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/data/utils/Consts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/data/utils/SearchCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/data/utils/SearchCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/data/utils/SearchOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/data/utils/SearchOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/data/utils/SearchStatement.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/data/utils/SearchStatement.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/service/BooksService.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/service/BooksService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/service/BooksServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/com/relatospapel/books/service/BooksServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/classes/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-payments/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-payments/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/ms-books-payments/src/main/java/com/relatosdepapel/payments/service/PaymentsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/ms-books-payments/src/main/java/com/relatosdepapel/payments/service/PaymentsService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,54 +55,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.eureka [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.gateway-filters [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.inventory-books [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.inventory-orders [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.inventory-payments [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.inventory-products [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.ms-books-payments [install].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.BooksApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.EurekaApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.GatewayAndFiltersAppRelatos.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.GatewayAndFiltersApplication (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.GatewayAndFiltersApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OrdersApplication (2).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OrdersApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PaymentsApplication (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PaymentsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ProductsApplication (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ProductsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Carlos/Documents/repoLab2Des/relatos-de-papel-backend&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.43488747&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.runner&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.eureka [install].executor": "Run",
+    "Maven.gateway-filters [install].executor": "Run",
+    "Maven.inventory-books [install].executor": "Run",
+    "Maven.inventory-orders [install].executor": "Run",
+    "Maven.inventory-payments [install].executor": "Run",
+    "Maven.inventory-products [install].executor": "Run",
+    "Maven.ms-books-payments [install].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.BooksApplication.executor": "Run",
+    "Spring Boot.EurekaApplication.executor": "Run",
+    "Spring Boot.GatewayAndFiltersAppRelatos.executor": "Run",
+    "Spring Boot.GatewayAndFiltersApplication (1).executor": "Run",
+    "Spring Boot.GatewayAndFiltersApplication.executor": "Run",
+    "Spring Boot.OrdersApplication (2).executor": "Run",
+    "Spring Boot.OrdersApplication.executor": "Run",
+    "Spring Boot.PaymentsApplication (1).executor": "Run",
+    "Spring Boot.PaymentsApplication.executor": "Run",
+    "Spring Boot.ProductsApplication (1).executor": "Run",
+    "Spring Boot.ProductsApplication.executor": "Run",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "#3 on ccamargo/refactor/book-search-optimization",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Carlos/Documents/repoLab2Des/relatos-de-papel-backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.43488747",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -170,14 +120,16 @@
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
+              <entry key="EurekaApplication" value="STOPPED" />
               <entry key="GatewayAndFiltersAppRelatos" value="STOPPED" />
+              <entry key="PaymentsApplication (1)" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayAndFiltersAppRelatos">
+  <component name="RunManager" selected="Spring Boot.PaymentsApplication (1)">
     <configuration name="BooksApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="inventory-books" />
@@ -228,6 +180,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.EurekaApplication" />
+      <item itemvalue="Spring Boot.GatewayAndFiltersAppRelatos" />
+      <item itemvalue="Spring Boot.BooksApplication" />
+      <item itemvalue="Spring Boot.PaymentsApplication (1)" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.PaymentsApplication (1)" />
@@ -322,7 +280,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770350667242</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update: Remove Example Projects, Edit:MapperConf">
+      <option name="closed" value="true" />
+      <created>1770398952337</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1770398952337</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,6 +313,7 @@
     <MESSAGE value="Update: change package name in gateway" />
     <MESSAGE value="Update: Add ms-payments ms-books uploaded" />
     <MESSAGE value="Update: paths changes, remove innecesary data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: paths changes, remove innecesary data" />
+    <MESSAGE value="Update: Remove Example Projects, Edit:MapperConf" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: Remove Example Projects, Edit:MapperConf" />
   </component>
 </project>

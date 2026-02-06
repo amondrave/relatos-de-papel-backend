@@ -27,17 +27,21 @@
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
         </processorPath>
-        <module name="inventory-orders" />
         <module name="gateway-filters" />
-        <module name="inventory-products (1)" />
         <module name="microservice" />
+        <module name="inventory-orders" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gateway-filters (1)" target="25" />
+      <module name="inventory-products (1)" target="25" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka" options="-parameters" />
       <module name="gateway-filters" options="-parameters" />
+      <module name="gateway-filters (1)" options="-parameters" />
       <module name="inventory-orders" options="-parameters" />
       <module name="inventory-products" options="-parameters" />
       <module name="inventory-products (1)" options="-parameters" />

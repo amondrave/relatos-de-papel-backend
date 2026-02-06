@@ -4,35 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6e92936-a5f0-4e86-aeb6-1478cddb96fb" name="Changes" comment="">
+    <list default="true" id="c6e92936-a5f0-4e86-aeb6-1478cddb96fb" name="Changes" comment="Update: Still in example">
+      <change afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/decorator/DeleteRequestDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/decorator/PatchRequestDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/decorator/PutRequestDecorator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/DWFS 8.1 - Products.postman_collection.json" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/DWFS 8.1 - Products.postman_collection.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/ProductsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/ProductsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/config/BeanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/config/BeanConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/controller/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/controller/ProductsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/controller/model/CreateProductRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/controller/model/CreateProductRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/controller/model/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/controller/model/ProductDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/ProductJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/ProductJpaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/Consts.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/Consts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/SearchCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/SearchCriteria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/SearchOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/SearchOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/SearchStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/SearchStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/service/ProductsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/service/ProductsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/service/ProductsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/service/ProductsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/eureka/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/eureka/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/decorator/PostRequestDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/decorator/PostRequestDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/decorator/RequestDecoratorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/decorator/RequestDecoratorFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,6 +54,10 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Maven.eureka [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gateway-filters [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.inventory-orders [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.inventory-products [install].executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
@@ -72,6 +67,8 @@
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;Spring Boot.EurekaApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayAndFiltersApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OrdersApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.ProductsApplication.executor&quot;: &quot;Run&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
@@ -108,6 +105,9 @@
           <value>
             <map>
               <entry key="EurekaApplication" value="STOPPED" />
+              <entry key="GatewayAndFiltersApplication" value="STOPPED" />
+              <entry key="OrdersApplication" value="STOPPED" />
+              <entry key="ProductsApplication" value="STOPPED" />
             </map>
           </value>
         </entry>
@@ -118,6 +118,14 @@
     <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="eureka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.unir.eureka.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayAndFiltersApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="gateway-filters (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.unir.gateway.GatewayAndFiltersApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -189,6 +197,8 @@
       <workItem from="1770311210387" duration="724000" />
       <workItem from="1770311959687" duration="3237000" />
       <workItem from="1770315414878" duration="383000" />
+      <workItem from="1770315804356" duration="6170000" />
+      <workItem from="1770329781745" duration="5969000" />
     </task>
     <task id="LOCAL-00001" summary="Edit: Examples as Directory">
       <option name="closed" value="true" />
@@ -206,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770307632618</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update: Still in example">
+      <option name="closed" value="true" />
+      <created>1770315878740</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1770315878740</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +243,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Edit: Examples as Directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit: Examples as Directory" />
+    <MESSAGE value="Update: Still in example" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: Still in example" />
   </component>
 </project>

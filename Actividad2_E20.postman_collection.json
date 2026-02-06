@@ -1,0 +1,308 @@
+{
+  "info": {
+    "_postman_id": "4bd323dc-d681-4cb9-b6b0-6546def2c959",
+    "name": "Actividad2_E20",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "17321329",
+    "_collection_link": "https://go.postman.co/collection/17321329-4bd323dc-d681-4cb9-b6b0-6546def2c959?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Books",
+      "item": [
+        {
+          "name": "getBooks",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"targetMethod\": \"GET\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8762/ms-books-catalogue/books",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8762",
+              "path": [
+                "ms-books-catalogue",
+                "books"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "postBooks",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"targetMethod\": \"POST\",\n    \"body\": {\n        \"name\": \"Iphone 16\",\n        \"country\": \"VEN\",\n        \"description\": \"Estupendo Iphone 16\",\n        \"visible\": true\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8762/ms-books-catalogue/books",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8762",
+              "path": [
+                "ms-books-catalogue",
+                "books"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "putBook",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"targetMethod\": \"PUT\",\r\n    \"body\": {\r\n        \"title\": \"Harry Potter 5\",\r\n            \"author\": \"J.K Rowling\",\r\n            \"publicationDate\": \"2005-01-01\",\r\n            \"category\": \"Infantil\",\r\n            \"codIsbn\": \"0000005\",\r\n            \"rate\": 4,\r\n            \"visible\": true\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8762/ms-books-catalogue/books/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8762",
+              "path": [
+                "ms-books-catalogue",
+                "books",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "patch Book",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8762/ms-books-catalogue/books/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8762",
+              "path": [
+                "ms-books-catalogue",
+                "books",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "deleteBook",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"targetMethod\": \"DELETE\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8762/ms-inventory-products/products/5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8762",
+              "path": [
+                "ms-inventory-products",
+                "products",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Payments",
+      "item": [
+        {
+          "name": "getPayments",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"targetMethod\": \"GET\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8762/ms-books-payments/payments",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8762",
+              "path": [
+                "ms-books-payments",
+                "payments"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "postPayments",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"targetMethod\": \"POST\",\n    \"body\": {\n        \"books\": [\"1\", \"2\", \"3\"],\n        \"customer\": \"daniel@correo.com\"\n        }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8762/ms-books-catalogue/books",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8762",
+              "path": [
+                "ms-books-catalogue",
+                "books"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "putPayments",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"targetMethod\": \"PUT\",\r\n    \"body\": {\r\n        \"customer\": \"andres@correo.com\"\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8762/ms-books-payments/payments/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8762",
+              "path": [
+                "ms-books-payments",
+                "payments",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PatchPayments",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"targetMethod\": \"PATCH\",\r\n    \"body\": {\r\n        \"customer\": \"nuevo@correo.com\"\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8762/ms-books-payments/payments/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8762",
+              "path": [
+                "ms-books-payments",
+                "payments",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "deletePayment",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"targetMethod\": \"DELETE\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8762/ms-books-payments/payments/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8762",
+              "path": [
+                "ms-books-payments",
+                "payments",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

@@ -69,6 +69,7 @@ public class PaymentsController {
  }
 
 @PutMapping("/{id}")
+@Operation(summary = "Actualizar en una compra", description = "Actualiza todo dentro de una compra.")
 @ApiResponse(
         responseCode = "200",
         description = "Compra actualizada",
@@ -80,6 +81,7 @@ public PaymentResponse update(@PathVariable Long id,@RequestBody @Valid UpdatePa
 }
 
 @PatchMapping("/{id}")
+@Operation(summary = "Actualizar en una compra", description = "Actualiza parcialmente dentro de una compra.")
 @ApiResponse(
         responseCode = "200",
         description = "Compra actualizada",

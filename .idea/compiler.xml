@@ -47,7 +47,7 @@
       <module name="inventory-books" options="-parameters" />
       <module name="inventory-orders" options="-parameters" />
       <module name="inventory-orders (1)" options="-parameters" />
-      <module name="inventory-payments" options="" />
+      <module name="inventory-payments" options="-parameters" />
       <module name="inventory-products" options="-parameters" />
       <module name="inventory-products (1)" options="-parameters" />
       <module name="microservice" options="-parameters" />

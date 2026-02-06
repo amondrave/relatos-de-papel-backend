@@ -1,7 +1,9 @@
 package com.relatosdepapel.payments.service;
 
+import com.relatosdepapel.payments.api.dto.PatchPaymentRequest;
 import com.relatosdepapel.payments.api.dto.PaymentRequest;
 import com.relatosdepapel.payments.api.dto.PaymentResponse;
+import com.relatosdepapel.payments.api.dto.UpdatePaymentRequest;
 import com.relatosdepapel.payments.core.BadRequestException;
 import com.relatosdepapel.payments.core.NotFoundException;
 import com.relatosdepapel.payments.domain.Payment;
@@ -81,4 +83,49 @@ public class PaymentsService {
   Payment p = repo.findById(id).orElseThrow(() -> new NotFoundException("Compra no encontrada: " + id));
   return new PaymentResponse(p.getId(), List.copyOf(p.getBooks()), p.getCustomer(), p.getCreatedAt());
  }
+
+    @Transactional
+    public PaymentResponse update(Long id, UpdatePaymentRequest request) {
+        Payment payment = repo.findById(id)
+                .orElseThrow(() -> new NotFoundException("Compra no encontrada: " + id));
+
+        payment.setCustomer(request.customer());
+
+        Payment saved = repo.save(payment);
+
+        return new PaymentResponse(
+                saved.getId(),
+                List.copyOf(saved.getBooks()),
+                saved.getCustomer(),
+                saved.getCreatedAt()
+        );
+    }
+
+    @Transactional
+    public PaymentResponse patch(Long id, PatchPaymentRequest request) {
+        Payment payment = repo.findById(id)
+                .orElseThrow(() -> new NotFoundException("Compra no encontrada: " + id));
+
+        if (request.customer() != null) {
+            payment.setCustomer(request.customer());
+        }
+
+        Payment saved = repo.save(payment);
+
+        return new PaymentResponse(
+                saved.getId(),
+                List.copyOf(saved.getBooks()),
+                saved.getCustomer(),
+                saved.getCreatedAt()
+        );
+    }
+
+    @Transactional
+    public void delete(Long id) {
+        Payment payment = repo.findById(id)
+                .orElseThrow(() -> new NotFoundException("Compra no encontrada: " + id));
+
+        repo.delete(payment);
+    }
+
 }

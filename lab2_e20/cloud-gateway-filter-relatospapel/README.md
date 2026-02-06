@@ -12,7 +12,7 @@ El Gateway actúa como **punto único de entrada** para los microservicios, cent
 - Spring Cloud Gateway
 - Filtros personalizados (Custom Gateway Filters)
 - Comunicación HTTP directa con microservicios
-- Enrutamiento basado en path (`/ms-books-catalogue/**`)
+- Enrutamiento basado en path (`/ms-books-catalogue/**`) (`/ms-books-payments/**`)
 
 ---
 
@@ -97,5 +97,16 @@ Cuando el método HTTP requiere un cuerpo (POST, PUT, PATCH), este se envía den
     "visible": true
   }
 }
-
 ```
+```json
+{
+  "targetMethod": "PATCH",
+  "body": {
+    "title": "Cien años de soledad Ed7",
+    "publicationDate": "1996-01-30",
+    "codIsbn": "9788439726899",
+  }
+}
+```
+
+

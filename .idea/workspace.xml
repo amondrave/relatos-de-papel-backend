@@ -4,18 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6e92936-a5f0-4e86-aeb6-1478cddb96fb" name="Changes" comment="Update: change package name in gateway">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/GatewayAndFiltersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/GatewayAndFiltersAppRelatos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/test/java/com/relatospapel/gateway/GatewayAndFiltersApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/test/java/com/relatospapel/gateway/GatewayAndFiltersAppRelatosTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/resources/data.sql" afterDir="false" />
+    <list default="true" id="c6e92936-a5f0-4e86-aeb6-1478cddb96fb" name="Changes" comment="Update: Add ms-payments ms-books uploaded">
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/GatewayAndFiltersAppRelatos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/config/MapperConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/decorator/DeleteRequestDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/decorator/GetRequestDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/decorator/PatchRequestDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/decorator/PostRequestDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/decorator/PutRequestDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/decorator/RequestDecoratorFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/filter/RequestTranslationFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/model/GatewayRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/utils/RequestBodyExtractor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/test/java/com/relatospapel/gateway/GatewayAndFiltersAppRelatosTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,14 +182,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrdersApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="inventory-orders (1)" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.unir.orders.OrdersApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="OrdersApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="inventory-orders" />
@@ -251,7 +248,7 @@
       <workItem from="1770315414878" duration="383000" />
       <workItem from="1770315804356" duration="6170000" />
       <workItem from="1770329781745" duration="15335000" />
-      <workItem from="1770348698403" duration="1534000" />
+      <workItem from="1770348698403" duration="1853000" />
     </task>
     <task id="LOCAL-00001" summary="Edit: Examples as Directory">
       <option name="closed" value="true" />
@@ -293,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770341103537</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update: Add ms-payments ms-books uploaded">
+      <option name="closed" value="true" />
+      <created>1770350320581</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1770350320581</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,6 +321,7 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
     <MESSAGE value="Update: +put +patch + Delete methods in gateway" />
     <MESSAGE value="Update: change package name in gateway" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: change package name in gateway" />
+    <MESSAGE value="Update: Add ms-payments ms-books uploaded" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: Add ms-payments ms-books uploaded" />
   </component>
 </project>

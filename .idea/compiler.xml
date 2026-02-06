@@ -20,6 +20,15 @@
         </processorPath>
         <module name="inventory-products" />
       </profile>
+      <profile name="Annotation profile for gateway" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
+        </processorPath>
+        <module name="gateway-filters" />
+      </profile>
       <profile name="Annotation profile for books" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -29,16 +38,6 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
         </processorPath>
         <module name="inventory-orders" />
-      </profile>
-      <profile name="Annotation profile for microservice" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
-        </processorPath>
-        <module name="gateway-filters" />
-        <module name="microservice" />
       </profile>
       <profile name="Annotation profile for inventory-books" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -63,6 +62,7 @@
       <module name="gateway-filters (1)" target="25" />
       <module name="inventory-orders (1)" target="25" />
       <module name="inventory-products (1)" target="25" />
+      <module name="microservice" target="25" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

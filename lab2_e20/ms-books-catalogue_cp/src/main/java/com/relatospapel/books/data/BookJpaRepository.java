@@ -11,13 +11,17 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
 interface BookJpaRepository extends JpaRepository<Book, Long>, JpaSpecificationExecutor<Book> {
 
-	List<Book> findByTitle(String name);
+    List<Book> findByTitle(String name);
 
-	List<Book> findByAuthor(String author);
+    List<Book> findByAuthor(String author);
 
-	List<Book> findByVisible(Boolean visible);
+    List<Book> findByVisible(Boolean visible);
 
-	List<Book> findByPublicationDate(LocalDate publicationDate);
+    List<Book> findByPublicationDate(LocalDate publicationDate);
+
+    boolean existsByTitle(String title);
+
+    boolean existsByTitleAndIdNot(String title, Long id);
 
 	Page<Book> findAll(Pageable pageable);
 

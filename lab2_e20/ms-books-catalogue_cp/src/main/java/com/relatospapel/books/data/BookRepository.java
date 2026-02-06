@@ -20,6 +20,10 @@ public class BookRepository {
 
     private final BookJpaRepository repository;
 
+    public boolean existsByTitleAndIdNot(String title, Long id) {
+        return repository.existsByTitleAndIdNot(title, id);
+    }
+
     public List<Book> getBooks() {
         return repository.findAll();
     }

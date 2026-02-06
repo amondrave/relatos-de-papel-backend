@@ -1,8 +1,8 @@
 package com.relatospapel.books.service;
 
-import java.time.LocalDate;
 import java.util.List;
 
+import com.relatospapel.books.controller.model.BookSearchRequest;
 import com.relatospapel.books.data.model.Book;
 import com.relatospapel.books.controller.model.BookDto;
 import com.relatospapel.books.controller.model.CreateBookRequest;
@@ -11,9 +11,9 @@ import org.springframework.data.domain.Pageable;
 
 public interface BooksService {
 
-	List<Book> getBooks(String title, String author, LocalDate publicationDate, String category, String codIsbn, Double rate, Boolean visible);
+	Page<Book> getBooks(BookSearchRequest request, Pageable pageable);
 
-	Page<Book> getBooks(String title, String author, LocalDate publicationDate, String category, String codIsbn, Double rate, Boolean visible, Pageable pageable);
+	List<Book> getBooks(BookSearchRequest request);
 
 	Book getBook(String bookId);
 

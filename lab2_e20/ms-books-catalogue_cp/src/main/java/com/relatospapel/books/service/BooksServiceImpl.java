@@ -1,6 +1,5 @@
 package com.relatospapel.books.service;
 
-import java.time.LocalDate;
 import java.util.List;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -8,6 +7,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.fge.jsonpatch.JsonPatchException;
 import com.github.fge.jsonpatch.mergepatch.JsonMergePatch;
+import com.relatospapel.books.controller.model.BookSearchRequest;
 import com.relatospapel.books.data.BookRepository;
 import com.relatospapel.books.controller.model.BookDto;
 import com.relatospapel.books.data.model.Book;
@@ -17,7 +17,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 
 import com.relatospapel.books.controller.model.CreateBookRequest;
 import org.springframework.web.server.ResponseStatusException;
@@ -31,26 +30,14 @@ public class BooksServiceImpl implements BooksService {
 	private final ObjectMapper objectMapper;
 
 	@Override
-	public List<Book> getBooks(String title, String author, LocalDate publicationDate, String category, String codIsbn, Double rate, Boolean visible) {
-
-		if (StringUtils.hasLength(title) || StringUtils.hasLength(author) || publicationDate != null || StringUtils.hasLength(category)
-                || StringUtils.hasLength(codIsbn) || rate != null || visible != null) {
-			return repository.search(title, author, publicationDate, category, codIsbn, rate, visible);
-		}
-
-		List<Book> books = repository.getBooks();
-		return books.isEmpty() ? null : books;
+	public Page<Book> getBooks(BookSearchRequest request, Pageable pageable) {
+		return repository.getBooks(request, pageable);
 	}
 
 	@Override
-	public Page<Book> getBooks(String title, String author, LocalDate publicationDate, String category, String codIsbn, Double rate, Boolean visible, Pageable pageable) {
-
-		if (StringUtils.hasLength(title) || StringUtils.hasLength(author) || publicationDate != null || StringUtils.hasLength(category)
-                || StringUtils.hasLength(codIsbn) || rate != null || visible != null) {
-			return repository.search(title, author, publicationDate, category, codIsbn, rate, visible, pageable);
-		}
-
-		return repository.getBooks(pageable);
+	public List<Book> getBooks(BookSearchRequest request) {
+		List<Book> books = repository.getBooks(request);
+		return (books == null || books.isEmpty()) ? null : books;
 	}
 
 	@Override

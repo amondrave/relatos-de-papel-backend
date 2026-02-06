@@ -4,6 +4,7 @@ com\relatospapel\books\service\BooksService.class
 com\relatospapel\books\data\BookJpaRepository.class
 com\relatospapel\books\data\model\Book.class
 com\relatospapel\books\data\utils\Consts.class
+com\relatospapel\books\controller\model\BookSearchRequest.class
 com\relatospapel\books\controller\model\ErrorResponse.class
 com\relatospapel\books\data\utils\SearchOperation.class
 com\relatospapel\books\config\BeanConfig.class

@@ -20,12 +20,17 @@ spring:
 
 eureka:
   client:
-    serviceUrl:
-      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}
     register-with-eureka: true
     fetch-registry: true
+    registry-fetch-interval-seconds: 5
+    service-url:
+      default-zone: ${EUREKA_HOST:http://localhost:8761/eureka}
   instance:
     prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 90
+    hostname: ms-books-payments
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
 catalogue:
   base-url: ${CATALOGUE_BASE_URL:lb://ms-books-catalogue}

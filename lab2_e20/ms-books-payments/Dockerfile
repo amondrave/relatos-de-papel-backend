@@ -1,20 +1,14 @@
-#
-# Build del proyecto (Multi-Stage)
-# --------------------------------
-#
-# Usamos una imagen de Maven para hacer build de proyecto con Java
-# Llamaremos a este sub-entorno "build"
-# Copiamos todo el contenido del repositorio
-# Ejecutamos el comando mvn clean package (Generara un archivo JAR para el despliegue)
-FROM maven:3.9.12-eclipse-temurin-25 AS build
-COPY . .
-RUN mvn clean package
+# syntax=docker/dockerfile:1
+FROM maven:3.9.9-eclipse-temurin-17 AS build
+WORKDIR /app
+COPY pom.xml .
+RUN mvn -q -DskipTests dependency:go-offline
+COPY src ./src
+RUN mvn -q -DskipTests package
 
-# Usamos una imagen de Eclipse Temurin (sucesora de AdoptOpenJDK)
-# Exponemos el puerto que nuestro componente va a usar para escuchar peticiones
-# Copiamos desde "build" el JAR generado (la ruta de generacion es la misma que veriamos en local) y lo movemos y renombramos en destino como 
-# Marcamos el punto de arranque de la imagen con el comando "java -jar app.jar" que ejecutará nuestro componente.
-FROM eclipse-temurin:25-jre
-EXPOSE 8082
-COPY --from=build /target/inventory-payments-0.0.1-SNAPSHOT.jar app.jar
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+FROM eclipse-temurin:17-jre
+WORKDIR /app
+ENV PORT=8732
+COPY --from=build /app/target/ms-books-payments-1.0.0.jar app.jar
+EXPOSE 8732
+ENTRYPOINT ["java","-jar","/app/app.jar"]

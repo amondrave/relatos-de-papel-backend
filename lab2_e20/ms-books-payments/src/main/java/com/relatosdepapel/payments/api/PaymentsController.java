@@ -69,16 +69,31 @@ public class PaymentsController {
  }
 
 @PutMapping("/{id}")
+@ApiResponse(
+        responseCode = "200",
+        description = "Compra actualizada",
+        content = @Content(mediaType = "application/json", schema = @Schema(implementation = PaymentResponse.class))
+)
+@ApiResponse(responseCode = "404", description = "Compra no encontrada")
 public PaymentResponse update(@PathVariable Long id,@RequestBody @Valid UpdatePaymentRequest request) {
     return service.update(id, request);
 }
 
 @PatchMapping("/{id}")
+@ApiResponse(
+        responseCode = "200",
+        description = "Compra actualizada",
+        content = @Content(mediaType = "application/json", schema = @Schema(implementation = PaymentResponse.class))
+)
+@ApiResponse(responseCode = "404", description = "Compra no encontrada")
 public PaymentResponse patch(@PathVariable Long id,@RequestBody PatchPaymentRequest request) {
     return service.patch(id, request);
 }
 
 @DeleteMapping("/{id}")
+@Operation(summary = "Elimina compra por id", description = "Elimina una compra por su id.")
+@ApiResponse(responseCode = "404", description = "Compra no encontrada")
+@ApiResponse(responseCode = "204", description = "Compra eliminada")
 @ResponseStatus(HttpStatus.NO_CONTENT)
 public void delete(@PathVariable Long id) {service.delete(id);}
 }

@@ -20,6 +20,8 @@ Variables de entorno:
 ## API
 - `POST /payments` registra una compra tras validar catálogo
 - `GET  /payments` lista compras registradas
+- `PUT  /payments/{id}` cambia un usuario en la compra por id
+- `DELETE /payments/{id}` elimina una compra por id
 - `GET  /payments/{id}` obtiene una compra por id
 
 ## Consola H2 (solo desarrollo)

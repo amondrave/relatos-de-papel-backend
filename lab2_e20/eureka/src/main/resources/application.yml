@@ -3,10 +3,10 @@ server:
 
 ## Eureka Server Configuration
 eureka:
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-  instance:
-    hostname: ${EUREKA_HOST:localhost} #intancia por nombre de s
   server:
-    renewal-percent-threshold: 0.90 #90% de heartbeats
+    renewal-percent-threshold: 0.85
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    hostname: ${EUREKA_HOST:localhost}

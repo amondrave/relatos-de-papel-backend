@@ -23,8 +23,16 @@ server:
 ## Configuracion del cliente de Eureka
 eureka:
   client:
+    register-with-eureka: true
+    fetch-registry: true
+    registry-fetch-interval-seconds: 5
     service-url:
-      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}
+      default-zone: ${EUREKA_HOST:http://localhost:8761/eureka}
   instance:
-    preferIpAddress: true
-    hostname: ms-books-catalogue
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 90
+    hostname:  ms-books-catalogue
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+debug: true

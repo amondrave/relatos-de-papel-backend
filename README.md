@@ -50,6 +50,9 @@ Cada microservicio es independiente, pero todos pertenecen al mismo repositorio 
 
 2 Gateway / Gateway Filters
 
-3 Inventory Products
+3 BOOKS-CATALOGUE / BOOKS-PAYMENTS
 
-4 Inventory Orders
+Peticiones Postman:
+https://orange-meadow-504725.postman.co/workspace/holamundo~e91d74f8-f3b2-47d7-b325-8ac44c6cbc96/request/17321329-1d7022bb-2db6-4e94-bc50-7f6848acda9a?action=share&creator=17321329&ctx=documentation
+
+

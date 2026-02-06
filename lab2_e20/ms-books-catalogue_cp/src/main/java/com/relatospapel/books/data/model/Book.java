@@ -15,6 +15,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.time.LocalDate;
+
 @Entity
 @Table(name = "books")
 @Getter
@@ -24,28 +26,29 @@ import lombok.ToString;
 @Builder
 @ToString
 public class Book {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	@Column(name = Consts.TITLE, unique = true)
 	private String title;
-	
+
 	@Column(name = Consts.AUTHOR)
 	private String author;
-	
+
 	@Column(name = Consts.PUBLICATIONDATE)
-	private String publicationDate;
+	private LocalDate publicationDate;
 
     @Column(name = Consts.CATEGORY)
     private String category;
 
     @Column(name = Consts.ISBN)
-    private String cod_isbn;
+    private String codIsbn;
+
     @Column(name = Consts.RATE)
-    private String rate;
-	
+    private Double rate;
+
 	@Column(name = Consts.VISIBLE)
 	private Boolean visible;
 
@@ -53,8 +56,8 @@ public class Book {
 		this.title = bookDto.getTitle();
 		this.author = bookDto.getAuthor();
 		this.publicationDate = bookDto.getPublicationDate();
-        this.category= bookDto.getCategory();
-        this.cod_isbn= bookDto.getCod_ISBN();
+        this.category = bookDto.getCategory();
+        this.codIsbn = bookDto.getCodIsbn();
         this.rate = bookDto.getRate();
 		this.visible = bookDto.getVisible();
 	}

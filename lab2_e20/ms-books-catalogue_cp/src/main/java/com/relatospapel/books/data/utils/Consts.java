@@ -7,7 +7,7 @@ public class Consts {
     public static final String AUTHOR = "author";
     public static final String PUBLICATIONDATE = "publicationdate";
     public static final String CATEGORY = "category";
-    public static final String ISBN = "cod_ISBN";
+    public static final String ISBN = "cod_isbn";
     public static final String RATE = "rate";
     public static final String VISIBLE = "visible";
 

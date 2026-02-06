@@ -7,8 +7,11 @@ import com.relatospapel.books.data.utils.SearchOperation;
 import com.relatospapel.books.data.utils.SearchStatement;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Repository;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Repository
@@ -19,6 +22,10 @@ public class BookRepository {
 
     public List<Book> getBooks() {
         return repository.findAll();
+    }
+
+    public Page<Book> getBooks(Pageable pageable) {
+        return repository.findAll(pageable);
     }
 
     public Book getById(Long id) {
@@ -33,7 +40,7 @@ public class BookRepository {
         repository.delete(book);
     }
 
-    public List<Book> search(String title, String author, String publicationDate, String category, String cod_ISBN, String rate,  Boolean visible) {
+    public List<Book> search(String title, String author, LocalDate publicationDate, String category, String codIsbn, Double rate, Boolean visible) {
         SearchCriteria<Book> spec = new SearchCriteria<>();
 
         if (StringUtils.isNotBlank(title)) {
@@ -44,20 +51,20 @@ public class BookRepository {
             spec.add(new SearchStatement(Consts.AUTHOR, author, SearchOperation.MATCH));
         }
 
-        if (StringUtils.isNotBlank(publicationDate)) {
-            spec.add(new SearchStatement(Consts.PUBLICATIONDATE, publicationDate, SearchOperation.MATCH));
+        if (publicationDate != null) {
+            spec.add(new SearchStatement(Consts.PUBLICATIONDATE, publicationDate, SearchOperation.EQUAL));
         }
 
         if (StringUtils.isNotBlank(category)) {
             spec.add(new SearchStatement(Consts.CATEGORY, category, SearchOperation.MATCH));
         }
 
-        if (StringUtils.isNotBlank(cod_ISBN)) {
-            spec.add(new SearchStatement(Consts.ISBN, cod_ISBN, SearchOperation.MATCH));
+        if (StringUtils.isNotBlank(codIsbn)) {
+            spec.add(new SearchStatement(Consts.ISBN, codIsbn, SearchOperation.MATCH));
         }
 
-        if (StringUtils.isNotBlank(rate)) {
-            spec.add(new SearchStatement(Consts.RATE, rate, SearchOperation.MATCH));
+        if (rate != null) {
+            spec.add(new SearchStatement(Consts.RATE, rate, SearchOperation.EQUAL));
         }
 
         if (visible != null) {
@@ -65,6 +72,40 @@ public class BookRepository {
         }
 
         return repository.findAll(spec);
+    }
+
+    public Page<Book> search(String title, String author, LocalDate publicationDate, String category, String codIsbn, Double rate, Boolean visible, Pageable pageable) {
+        SearchCriteria<Book> spec = new SearchCriteria<>();
+
+        if (StringUtils.isNotBlank(title)) {
+            spec.add(new SearchStatement(Consts.TITLE, title, SearchOperation.MATCH));
+        }
+
+        if (StringUtils.isNotBlank(author)) {
+            spec.add(new SearchStatement(Consts.AUTHOR, author, SearchOperation.MATCH));
+        }
+
+        if (publicationDate != null) {
+            spec.add(new SearchStatement(Consts.PUBLICATIONDATE, publicationDate, SearchOperation.EQUAL));
+        }
+
+        if (StringUtils.isNotBlank(category)) {
+            spec.add(new SearchStatement(Consts.CATEGORY, category, SearchOperation.MATCH));
+        }
+
+        if (StringUtils.isNotBlank(codIsbn)) {
+            spec.add(new SearchStatement(Consts.ISBN, codIsbn, SearchOperation.MATCH));
+        }
+
+        if (rate != null) {
+            spec.add(new SearchStatement(Consts.RATE, rate, SearchOperation.EQUAL));
+        }
+
+        if (visible != null) {
+            spec.add(new SearchStatement(Consts.VISIBLE, visible, SearchOperation.EQUAL));
+        }
+
+        return repository.findAll(spec, pageable);
     }
 
 }

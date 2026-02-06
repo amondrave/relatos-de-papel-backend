@@ -1,5 +1,6 @@
 package com.relatospapel.books.service;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -10,30 +11,29 @@ import com.github.fge.jsonpatch.mergepatch.JsonMergePatch;
 import com.relatospapel.books.data.BookRepository;
 import com.relatospapel.books.controller.model.BookDto;
 import com.relatospapel.books.data.model.Book;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import com.relatospapel.books.controller.model.CreateBookRequest;
 
 @Service
+@RequiredArgsConstructor
 @Slf4j
 public class BooksServiceImpl implements BooksService {
 
-	@Autowired
-	private BookRepository repository;
-
-	@Autowired
-	private ObjectMapper objectMapper;
+	private final BookRepository repository;
+	private final ObjectMapper objectMapper;
 
 	@Override
-	public List<Book> getBooks(String title, String author, String publicationDate, String category, String cod_ISBN, String rate,  Boolean visible) {
+	public List<Book> getBooks(String title, String author, LocalDate publicationDate, String category, String codIsbn, Double rate, Boolean visible) {
 
-		if (StringUtils.hasLength(title) || StringUtils.hasLength(author) || StringUtils.hasLength(publicationDate)|| StringUtils.hasLength(category)
-                || StringUtils.hasLength(cod_ISBN) || StringUtils.hasLength(rate)
-				|| visible != null) {
-			return repository.search(title, author, publicationDate, category,cod_ISBN,rate,visible);
+		if (StringUtils.hasLength(title) || StringUtils.hasLength(author) || publicationDate != null || StringUtils.hasLength(category)
+                || StringUtils.hasLength(codIsbn) || rate != null || visible != null) {
+			return repository.search(title, author, publicationDate, category, codIsbn, rate, visible);
 		}
 
 		List<Book> books = repository.getBooks();
@@ -41,14 +41,25 @@ public class BooksServiceImpl implements BooksService {
 	}
 
 	@Override
-	public Book getBook(String BookId) {
-		return repository.getById(Long.valueOf(BookId));
+	public Page<Book> getBooks(String title, String author, LocalDate publicationDate, String category, String codIsbn, Double rate, Boolean visible, Pageable pageable) {
+
+		if (StringUtils.hasLength(title) || StringUtils.hasLength(author) || publicationDate != null || StringUtils.hasLength(category)
+                || StringUtils.hasLength(codIsbn) || rate != null || visible != null) {
+			return repository.search(title, author, publicationDate, category, codIsbn, rate, visible, pageable);
+		}
+
+		return repository.getBooks(pageable);
 	}
 
 	@Override
-	public Boolean removeBook(String BookId) {
+	public Book getBook(String bookId) {
+		return repository.getById(Long.valueOf(bookId));
+	}
 
-		Book book = repository.getById(Long.valueOf(BookId));
+	@Override
+	public Boolean removeBook(String bookId) {
+
+		Book book = repository.getById(Long.valueOf(bookId));
 
 		if (book != null) {
 			repository.delete(book);
@@ -60,26 +71,17 @@ public class BooksServiceImpl implements BooksService {
 
 	@Override
 	public Book createBook(CreateBookRequest request) {
+		Book book = Book.builder()
+				.title(request.getTitle())
+				.author(request.getAuthor())
+				.publicationDate(request.getPublicationDate())
+				.category(request.getCategory())
+				.codIsbn(request.getCodIsbn())
+				.rate(request.getRate())
+				.visible(request.getVisible())
+				.build();
 
-		//Otra opcion: Jakarta Validation: https://www.baeldung.com/java-validation
-		if (request != null 
-                && StringUtils.hasLength(request.getTitle().trim())
-				&& StringUtils.hasLength(request.getAuthor().trim())
-				&& StringUtils.hasLength(request.getPublicationDate().trim())
-                && StringUtils.hasLength(request.getCategory().trim())
-                && StringUtils.hasLength(request.getCod_ISBN().trim())
-                && StringUtils.hasLength(request.getRate().trim())
-                && request.getVisible() != null) {
-
-			Book book = Book.builder().title(request.getTitle()).author(request.getAuthor())
-					.publicationDate(request.getPublicationDate()).category(request.getCategory())
-                    .cod_isbn(request.getCod_ISBN()).rate(request.getRate())
-                    .visible(request.getVisible()).build();
-
-			return repository.save(book);
-		} else {
-			return null;
-		}
+		return repository.save(book);
 	}
 
 	@Override

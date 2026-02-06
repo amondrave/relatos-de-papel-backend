@@ -1,0 +1,16 @@
+/Users/angelmondragon/Desktop/maestria/back/relatos-de-papel-backend/lab2_e20/ms-books-catalogue_cp/src/main/java/com/relatospapel/books/BooksApplication.java
+/Users/angelmondragon/Desktop/maestria/back/relatos-de-papel-backend/lab2_e20/ms-books-catalogue_cp/src/main/java/com/relatospapel/books/config/BeanConfig.java
+/Users/angelmondragon/Desktop/maestria/back/relatos-de-papel-backend/lab2_e20/ms-books-catalogue_cp/src/main/java/com/relatospapel/books/controller/BooksController.java
+/Users/angelmondragon/Desktop/maestria/back/relatos-de-papel-backend/lab2_e20/ms-books-catalogue_cp/src/main/java/com/relatospapel/books/controller/GlobalExceptionHandler.java
+/Users/angelmondragon/Desktop/maestria/back/relatos-de-papel-backend/lab2_e20/ms-books-catalogue_cp/src/main/java/com/relatospapel/books/controller/model/BookDto.java
+/Users/angelmondragon/Desktop/maestria/back/relatos-de-papel-backend/lab2_e20/ms-books-catalogue_cp/src/main/java/com/relatospapel/books/controller/model/CreateBookRequest.java
+/Users/angelmondragon/Desktop/maestria/back/relatos-de-papel-backend/lab2_e20/ms-books-catalogue_cp/src/main/java/com/relatospapel/books/controller/model/ErrorResponse.java
+/Users/angelmondragon/Desktop/maestria/back/relatos-de-papel-backend/lab2_e20/ms-books-catalogue_cp/src/main/java/com/relatospapel/books/data/BookJpaRepository.java
+/Users/angelmondragon/Desktop/maestria/back/relatos-de-papel-backend/lab2_e20/ms-books-catalogue_cp/src/main/java/com/relatospapel/books/data/BookRepository.java
+/Users/angelmondragon/Desktop/maestria/back/relatos-de-papel-backend/lab2_e20/ms-books-catalogue_cp/src/main/java/com/relatospapel/books/data/model/Book.java
+/Users/angelmondragon/Desktop/maestria/back/relatos-de-papel-backend/lab2_e20/ms-books-catalogue_cp/src/main/java/com/relatospapel/books/data/utils/Consts.java
+/Users/angelmondragon/Desktop/maestria/back/relatos-de-papel-backend/lab2_e20/ms-books-catalogue_cp/src/main/java/com/relatospapel/books/data/utils/SearchCriteria.java
+/Users/angelmondragon/Desktop/maestria/back/relatos-de-papel-backend/lab2_e20/ms-books-catalogue_cp/src/main/java/com/relatospapel/books/data/utils/SearchOperation.java
+/Users/angelmondragon/Desktop/maestria/back/relatos-de-papel-backend/lab2_e20/ms-books-catalogue_cp/src/main/java/com/relatospapel/books/data/utils/SearchStatement.java
+/Users/angelmondragon/Desktop/maestria/back/relatos-de-papel-backend/lab2_e20/ms-books-catalogue_cp/src/main/java/com/relatospapel/books/service/BooksService.java
+/Users/angelmondragon/Desktop/maestria/back/relatos-de-papel-backend/lab2_e20/ms-books-catalogue_cp/src/main/java/com/relatospapel/books/service/BooksServiceImpl.java

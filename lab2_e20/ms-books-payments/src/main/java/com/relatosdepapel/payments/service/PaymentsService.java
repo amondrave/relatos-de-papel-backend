@@ -28,17 +28,10 @@ public class PaymentsService {
   // 1) Consultar catálogo para cada id recibido
   List<Book> books = request.books().stream()
       .map(booksFacade::getBook)
-      .filter(Objects::nonNull)
       .toList();
 
   // 2) Business validation: must exist, be visible and have stock (>0)
-  boolean missing = books.size() != request.books().size();
-  boolean notVisible = books.stream().anyMatch(b -> b.getVisible() != null && !b.getVisible());
-  boolean noStock = books.stream().anyMatch(b -> b.getStock() != null && b.getStock() <= 0);
-
-  if (missing || notVisible || noStock) {
-   throw new BadRequestException("Compra rechazada: uno o más libros no existen, no son visibles o no tienen stock");
-  }
+  validatePurchaseRequirements(request.books(), books);
 
   // 3) Persistir acuse de compra en DB del operador (H2 independiente)
   List<Long> ids = books.stream().map(Book::getId).toList();
@@ -49,6 +42,26 @@ public class PaymentsService {
 
   Payment saved = repo.save(payment);
   return new PaymentResponse(saved.getId(), saved.getBooks(), saved.getCustomer(), saved.getCreatedAt());
+ }
+
+ private void validatePurchaseRequirements(List<String> requestedIds, List<Book> foundBooks) {
+  if (foundBooks.size() != requestedIds.size()) {
+   throw new BadRequestException("Compra rechazada: Uno o más libros no existen.");
+  }
+
+  for (Book book : foundBooks) {
+   if (Objects.isNull(book)) {
+    throw new BadRequestException("Compra rechazada: Uno o más libros no existen en el catálogo.");
+   }
+
+   if (Boolean.FALSE.equals(book.getVisible())) {
+    throw new BadRequestException("Compra rechazada: El libro con ID " + book.getId() + " está oculto.");
+   }
+
+   if (Objects.isNull(book.getStock()) || book.getStock() <= 0) {
+    throw new BadRequestException("Compra rechazada: El libro con ID " + book.getId() + " no tiene stock.");
+   }
+  }
  }
 
  @Transactional(readOnly = true)

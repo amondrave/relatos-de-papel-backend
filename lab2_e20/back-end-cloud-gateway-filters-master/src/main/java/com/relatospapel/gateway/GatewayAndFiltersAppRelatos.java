@@ -6,13 +6,13 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class GatewayAndFiltersApplication {
+public class GatewayAndFiltersAppRelatos {
 
 	public static void main(String[] args) {
 		// Retrieve execution profile from environment variable. Otherwise, default profile is used.
 		String profile = System.getenv("PROFILE");
 		System.setProperty("spring.profiles.active", profile != null ? profile : "default");
-		SpringApplication.run(GatewayAndFiltersApplication.class, args);
+		SpringApplication.run(GatewayAndFiltersAppRelatos.class, args);
 	}
 
 }

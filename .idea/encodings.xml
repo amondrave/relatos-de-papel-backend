@@ -11,9 +11,12 @@
     <file url="file://$PROJECT_DIR$/back-end-spring-microservice-archetype-master/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lab2_e20/back-end-inventory-orders/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lab2_e20/back-end-spring-microservice-archetype-master/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lab2_e20/eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lab2_e20/ms-books-payments/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
   </component>
 </project>

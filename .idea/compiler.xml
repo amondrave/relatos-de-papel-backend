@@ -9,7 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka" />
       </profile>
-      <profile name="Annotation profile for products" enabled="true">
+      <profile name="Annotation profile for inventory-products" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -20,6 +20,16 @@
         </processorPath>
         <module name="inventory-products" />
       </profile>
+      <profile name="Annotation profile for books" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
+        </processorPath>
+        <module name="inventory-orders" />
+      </profile>
       <profile name="Annotation profile for microservice" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -29,11 +39,29 @@
         </processorPath>
         <module name="gateway-filters" />
         <module name="microservice" />
-        <module name="inventory-orders" />
+      </profile>
+      <profile name="Annotation profile for inventory-books" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
+        </processorPath>
+        <module name="inventory-books" />
+      </profile>
+      <profile name="Annotation profile for inventory-payments" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
+        </processorPath>
+        <module name="inventory-payments" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="gateway-filters (1)" target="25" />
+      <module name="inventory-orders (1)" target="25" />
       <module name="inventory-products (1)" target="25" />
     </bytecodeTargetLevel>
   </component>
@@ -42,7 +70,10 @@
       <module name="eureka" options="-parameters" />
       <module name="gateway-filters" options="-parameters" />
       <module name="gateway-filters (1)" options="-parameters" />
+      <module name="inventory-books" options="-parameters" />
       <module name="inventory-orders" options="-parameters" />
+      <module name="inventory-orders (1)" options="-parameters" />
+      <module name="inventory-payments" options="-parameters" />
       <module name="inventory-products" options="-parameters" />
       <module name="inventory-products (1)" options="-parameters" />
       <module name="microservice" options="-parameters" />

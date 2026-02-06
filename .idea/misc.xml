@@ -18,6 +18,9 @@
         <option value="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/pom.xml" />
         <option value="$PROJECT_DIR$/lab2_e20/back-end-spring-microservice-archetype-master/pom.xml" />
         <option value="$PROJECT_DIR$/lab2_e20/eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders/pom.xml" />
+        <option value="$PROJECT_DIR$/lab2_e20/ms-books-payments/pom.xml" />
+        <option value="$PROJECT_DIR$/lab2_e20/ms-books-catalogue_cp/pom.xml" />
       </list>
     </option>
   </component>

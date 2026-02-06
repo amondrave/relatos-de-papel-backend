@@ -1,0 +1,4 @@
+INSERT INTO books (id, title, author, publicationdate, category, cod_ISBN, rate, visible) VALUES (1, 'Harry Potter 4', 'J.K Rowling', '2000-01-01', 'Infantil', '0000001', '4.8', true);
+INSERT INTO books (id, title, author, publicationdate, category, cod_ISBN, rate, visible) VALUES (2, 'Harry Potter 3', 'J.K Rowling', '2001-01-01', 'Infantil', '0000002', '4.8', true);
+INSERT INTO books (id, title, author, publicationdate, category, cod_ISBN, rate, visible) VALUES (3, 'Harry Potter 2', 'J.K Rowling', '2002-01-01', 'Infantil', '0000003', '4.8', true);
+INSERT INTO books (id, title, author, publicationdate, category, cod_ISBN, rate, visible) VALUES (4, 'Harry Potter 1', 'J.K Rowling', '2003-01-01', 'Infantil', '0000004', '4.8', true);

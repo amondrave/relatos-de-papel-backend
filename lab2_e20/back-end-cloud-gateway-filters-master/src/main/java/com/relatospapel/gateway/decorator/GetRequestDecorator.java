@@ -1,6 +1,6 @@
-package com.unir.gateway.decorator;
+package com.relatospapel.gateway.decorator;
 
-import com.unir.gateway.model.GatewayRequest;
+import com.relatospapel.gateway.model.GatewayRequest;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.gateway.support.ServerWebExchangeUtils;

@@ -1,7 +1,7 @@
-package com.unir.gateway.decorator;
+package com.relatospapel.gateway.decorator;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.unir.gateway.model.GatewayRequest;
+import com.relatospapel.gateway.model.GatewayRequest;
 import lombok.NonNull;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;

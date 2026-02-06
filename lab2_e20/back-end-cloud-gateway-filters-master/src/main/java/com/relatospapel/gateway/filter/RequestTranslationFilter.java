@@ -1,8 +1,8 @@
-package com.unir.gateway.filter;
+package com.relatospapel.gateway.filter;
 
-import com.unir.gateway.decorator.RequestDecoratorFactory;
-import com.unir.gateway.model.GatewayRequest;
-import com.unir.gateway.utils.RequestBodyExtractor;
+import com.relatospapel.gateway.decorator.RequestDecoratorFactory;
+import com.relatospapel.gateway.model.GatewayRequest;
+import com.relatospapel.gateway.utils.RequestBodyExtractor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;

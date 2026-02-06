@@ -1,7 +1,7 @@
-package com.unir.gateway.decorator;
+package com.relatospapel.gateway.decorator;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.unir.gateway.model.GatewayRequest;
+import com.relatospapel.gateway.model.GatewayRequest;
 import lombok.NonNull;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
@@ -18,12 +18,12 @@ import reactor.core.publisher.Flux;
 import java.net.URI;
 
 @Slf4j
-public class DeleteRequestDecorator extends ServerHttpRequestDecorator {
+public class PatchRequestDecorator extends ServerHttpRequestDecorator {
 
     private final GatewayRequest gatewayRequest;
     private final ObjectMapper objectMapper;
 
-    public DeleteRequestDecorator(GatewayRequest gatewayRequest, ObjectMapper objectMapper) {
+    public PatchRequestDecorator(GatewayRequest gatewayRequest, ObjectMapper objectMapper) {
         super(gatewayRequest.getExchange().getRequest());
         this.gatewayRequest = gatewayRequest;
         this.objectMapper = objectMapper;
@@ -32,7 +32,7 @@ public class DeleteRequestDecorator extends ServerHttpRequestDecorator {
     @Override
     @NonNull
     public HttpMethod getMethod() {
-        return HttpMethod.DELETE;
+        return HttpMethod.PATCH;
     }
 
     @Override
@@ -41,7 +41,6 @@ public class DeleteRequestDecorator extends ServerHttpRequestDecorator {
         return UriComponentsBuilder
                 .fromUri((URI) gatewayRequest.getExchange().getAttributes()
                         .get(ServerWebExchangeUtils.GATEWAY_REQUEST_URL_ATTR))
-                .queryParams(gatewayRequest.getQueryParams())
                 .build()
                 .toUri();
     }
@@ -56,10 +55,6 @@ public class DeleteRequestDecorator extends ServerHttpRequestDecorator {
     @NonNull
     @SneakyThrows
     public Flux<DataBuffer> getBody() {
-        // DELETE: body opcional
-        if (gatewayRequest.getBody() == null) {
-            return Flux.empty();
-        }
         DataBufferFactory bufferFactory = new DefaultDataBufferFactory();
         byte[] bodyData = objectMapper.writeValueAsBytes(gatewayRequest.getBody());
         DataBuffer buffer = bufferFactory.allocateBuffer(bodyData.length);

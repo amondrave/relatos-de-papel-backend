@@ -1,7 +1,7 @@
-package com.unir.gateway.decorator;
+package com.relatospapel.gateway.decorator;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.unir.gateway.model.GatewayRequest;
+import com.relatospapel.gateway.model.GatewayRequest;
 import lombok.NonNull;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
@@ -18,12 +18,12 @@ import reactor.core.publisher.Flux;
 import java.net.URI;
 
 @Slf4j
-public class PatchRequestDecorator extends ServerHttpRequestDecorator {
+public class PutRequestDecorator extends ServerHttpRequestDecorator {
 
     private final GatewayRequest gatewayRequest;
     private final ObjectMapper objectMapper;
 
-    public PatchRequestDecorator(GatewayRequest gatewayRequest, ObjectMapper objectMapper) {
+    public PutRequestDecorator(GatewayRequest gatewayRequest, ObjectMapper objectMapper) {
         super(gatewayRequest.getExchange().getRequest());
         this.gatewayRequest = gatewayRequest;
         this.objectMapper = objectMapper;
@@ -31,25 +31,23 @@ public class PatchRequestDecorator extends ServerHttpRequestDecorator {
 
     @Override
     @NonNull
-    public HttpMethod getMethod() {
-        return HttpMethod.PATCH;
-    }
+    public HttpMethod getMethod() {return HttpMethod.PUT;}
 
     @Override
     @NonNull
     public URI getURI() {
         return UriComponentsBuilder
-                .fromUri((URI) gatewayRequest.getExchange().getAttributes()
-                        .get(ServerWebExchangeUtils.GATEWAY_REQUEST_URL_ATTR))
-                .build()
-                .toUri();
+                .fromUri(
+                        (URI) gatewayRequest
+                                .getExchange()
+                                .getAttributes()
+                                .get(ServerWebExchangeUtils.GATEWAY_REQUEST_URL_ATTR)
+                ).build().toUri();
     }
 
     @Override
     @NonNull
-    public HttpHeaders getHeaders() {
-        return gatewayRequest.getHeaders();
-    }
+    public HttpHeaders getHeaders() {return gatewayRequest.getHeaders();}
 
     @Override
     @NonNull
@@ -62,3 +60,4 @@ public class PatchRequestDecorator extends ServerHttpRequestDecorator {
         return Flux.just(buffer);
     }
 }
+

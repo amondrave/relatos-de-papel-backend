@@ -1,4 +1,4 @@
-package com.unir.gateway.model;
+package com.relatospapel.gateway.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;

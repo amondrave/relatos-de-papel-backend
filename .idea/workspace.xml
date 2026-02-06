@@ -4,14 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6e92936-a5f0-4e86-aeb6-1478cddb96fb" name="Changes" comment="Update: Still in example">
-      <change afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/decorator/DeleteRequestDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/decorator/PatchRequestDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/decorator/PutRequestDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/decorator/PostRequestDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/decorator/PostRequestDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/decorator/RequestDecoratorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/decorator/RequestDecoratorFactory.java" afterDir="false" />
+    <list default="true" id="c6e92936-a5f0-4e86-aeb6-1478cddb96fb" name="Changes" comment="Update: +put +patch + Delete methods in gateway">
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/GatewayAndFiltersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/GatewayAndFiltersApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/config/MapperConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/config/MapperConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/decorator/DeleteRequestDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/decorator/DeleteRequestDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/decorator/GetRequestDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/decorator/GetRequestDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/decorator/PatchRequestDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/decorator/PatchRequestDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/decorator/PostRequestDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/decorator/PostRequestDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/decorator/PutRequestDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/decorator/PutRequestDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/decorator/RequestDecoratorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/decorator/RequestDecoratorFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/filter/RequestTranslationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/filter/RequestTranslationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/model/GatewayRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/model/GatewayRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/unir/gateway/utils/RequestBodyExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/main/java/com/relatospapel/gateway/utils/RequestBodyExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/test/java/com/unir/gateway/GatewayAndFiltersApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-cloud-gateway-filters-master/src/test/java/com/relatospapel/gateway/GatewayAndFiltersApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/unir/orders/OrdersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/relatospapel/orders/OrdersApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/unir/orders/controller/OrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/relatospapel/orders/controller/OrdersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/unir/orders/controller/model/OrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/relatospapel/orders/controller/model/OrderRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/unir/orders/data/OrderJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/relatospapel/orders/data/OrderJpaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/unir/orders/data/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/relatospapel/orders/data/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/unir/orders/facade/ProductsFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/relatospapel/orders/facade/ProductsFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/unir/orders/facade/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/relatospapel/orders/facade/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/unir/orders/service/OrdersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/relatospapel/orders/service/OrdersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/unir/orders/service/OrdersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-orders-master/src/main/java/com/relatospapel/orders/service/OrdersServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/ProductsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/relatospapel/products/ProductsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/config/BeanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/relatospapel/products/config/BeanConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/controller/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/relatospapel/products/controller/ProductsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/controller/model/CreateProductRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/relatospapel/products/controller/model/CreateProductRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/controller/model/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/relatospapel/products/controller/model/ProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/ProductJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/relatospapel/products/data/ProductJpaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/relatospapel/products/data/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/relatospapel/products/data/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/Consts.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/relatospapel/products/data/utils/Consts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/SearchCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/relatospapel/products/data/utils/SearchCriteria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/SearchOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/relatospapel/products/data/utils/SearchOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/data/utils/SearchStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/relatospapel/products/data/utils/SearchStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/service/ProductsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/relatospapel/products/service/ProductsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/unir/products/service/ProductsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/back-end-inventory-products-master/src/main/java/com/relatospapel/products/service/ProductsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2_e20/eureka/src/main/java/com/unir/eureka/EurekaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab2_e20/eureka/src/main/java/com/relatospapel/eureka/EurekaApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +167,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GatewayAndFiltersApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="gateway-filters (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.unir.gateway.GatewayAndFiltersApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MicroserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="microservice" />
@@ -165,6 +202,14 @@
     <configuration name="ProductsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="inventory-products" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.unir.products.ProductsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="inventory-products (1)" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.unir.products.ProductsApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -198,7 +243,7 @@
       <workItem from="1770311959687" duration="3237000" />
       <workItem from="1770315414878" duration="383000" />
       <workItem from="1770315804356" duration="6170000" />
-      <workItem from="1770329781745" duration="5969000" />
+      <workItem from="1770329781745" duration="7686000" />
     </task>
     <task id="LOCAL-00001" summary="Edit: Examples as Directory">
       <option name="closed" value="true" />
@@ -224,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770315878740</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update: +put +patch + Delete methods in gateway">
+      <option name="closed" value="true" />
+      <created>1770338967642</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1770338967642</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +297,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Edit: Examples as Directory" />
     <MESSAGE value="Update: Still in example" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: Still in example" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
+    <MESSAGE value="Update: +put +patch + Delete methods in gateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: +put +patch + Delete methods in gateway" />
   </component>
 </project>

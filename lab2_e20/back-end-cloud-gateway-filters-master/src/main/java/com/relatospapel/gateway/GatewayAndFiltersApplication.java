@@ -1,4 +1,4 @@
-package com.unir.gateway;
+package com.relatospapel.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

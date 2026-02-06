@@ -1,4 +1,4 @@
-package com.unir.gateway;
+package com.relatospapel.gateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

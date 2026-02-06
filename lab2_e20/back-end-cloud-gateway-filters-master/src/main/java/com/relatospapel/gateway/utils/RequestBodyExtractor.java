@@ -1,7 +1,7 @@
-package com.unir.gateway.utils;
+package com.relatospapel.gateway.utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.unir.gateway.model.GatewayRequest;
+import com.relatospapel.gateway.model.GatewayRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.bouncycastle.util.Strings;

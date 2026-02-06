@@ -1,5 +1,6 @@
 package com.relatospapel.books.data;
 
+import com.relatospapel.books.controller.model.BookSearchRequest;
 import com.relatospapel.books.data.model.Book;
 import com.relatospapel.books.data.utils.Consts;
 import com.relatospapel.books.data.utils.SearchCriteria;
@@ -11,7 +12,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Repository;
 
-import java.time.LocalDate;
 import java.util.List;
 
 @Repository
@@ -20,12 +20,36 @@ public class BookRepository {
 
     private final BookJpaRepository repository;
 
-    public List<Book> getBooks() {
-        return repository.findAll();
+    public Page<Book> getBooks(BookSearchRequest filters, Pageable pageable) {
+        if (filters == null || !filters.isEmpty()) {
+            return repository.findAll(pageable);
+        }
+        return repository.findAll(buildSpec(filters), pageable);
     }
 
-    public Page<Book> getBooks(Pageable pageable) {
-        return repository.findAll(pageable);
+    public List<Book> getBooks(BookSearchRequest filters) {
+        if (filters == null || !filters.isEmpty()) {
+            return repository.findAll();
+        }
+        return repository.findAll(buildSpec(filters));
+    }
+
+    private SearchCriteria<Book> buildSpec(BookSearchRequest f) {
+        SearchCriteria<Book> spec = new SearchCriteria<>();
+        addParam(spec, Consts.TITLE, f.title(), SearchOperation.MATCH);
+        addParam(spec, Consts.AUTHOR, f.author(), SearchOperation.MATCH);
+        addParam(spec, Consts.PUBLICATIONDATE, f.publicationDate(), SearchOperation.EQUAL);
+        addParam(spec, Consts.CATEGORY, f.category(), SearchOperation.MATCH);
+        addParam(spec, Consts.ISBN, f.codIsbn(), SearchOperation.MATCH);
+        addParam(spec, Consts.RATE, f.rate(), SearchOperation.EQUAL);
+        addParam(spec, Consts.VISIBLE, f.visible(), SearchOperation.EQUAL);
+        return spec;
+    }
+
+    private void addParam(SearchCriteria<Book> spec, String key, Object val, SearchOperation op) {
+        if (val != null && (!(val instanceof String s) || StringUtils.isNotBlank(s))) {
+            spec.add(new SearchStatement(key, val, op));
+        }
     }
 
     public Book getById(Long id) {
@@ -39,73 +63,4 @@ public class BookRepository {
     public void delete(Book book) {
         repository.delete(book);
     }
-
-    public List<Book> search(String title, String author, LocalDate publicationDate, String category, String codIsbn, Double rate, Boolean visible) {
-        SearchCriteria<Book> spec = new SearchCriteria<>();
-
-        if (StringUtils.isNotBlank(title)) {
-            spec.add(new SearchStatement(Consts.TITLE, title, SearchOperation.MATCH));
-        }
-
-        if (StringUtils.isNotBlank(author)) {
-            spec.add(new SearchStatement(Consts.AUTHOR, author, SearchOperation.MATCH));
-        }
-
-        if (publicationDate != null) {
-            spec.add(new SearchStatement(Consts.PUBLICATIONDATE, publicationDate, SearchOperation.EQUAL));
-        }
-
-        if (StringUtils.isNotBlank(category)) {
-            spec.add(new SearchStatement(Consts.CATEGORY, category, SearchOperation.MATCH));
-        }
-
-        if (StringUtils.isNotBlank(codIsbn)) {
-            spec.add(new SearchStatement(Consts.ISBN, codIsbn, SearchOperation.MATCH));
-        }
-
-        if (rate != null) {
-            spec.add(new SearchStatement(Consts.RATE, rate, SearchOperation.EQUAL));
-        }
-
-        if (visible != null) {
-            spec.add(new SearchStatement(Consts.VISIBLE, visible, SearchOperation.EQUAL));
-        }
-
-        return repository.findAll(spec);
-    }
-
-    public Page<Book> search(String title, String author, LocalDate publicationDate, String category, String codIsbn, Double rate, Boolean visible, Pageable pageable) {
-        SearchCriteria<Book> spec = new SearchCriteria<>();
-
-        if (StringUtils.isNotBlank(title)) {
-            spec.add(new SearchStatement(Consts.TITLE, title, SearchOperation.MATCH));
-        }
-
-        if (StringUtils.isNotBlank(author)) {
-            spec.add(new SearchStatement(Consts.AUTHOR, author, SearchOperation.MATCH));
-        }
-
-        if (publicationDate != null) {
-            spec.add(new SearchStatement(Consts.PUBLICATIONDATE, publicationDate, SearchOperation.EQUAL));
-        }
-
-        if (StringUtils.isNotBlank(category)) {
-            spec.add(new SearchStatement(Consts.CATEGORY, category, SearchOperation.MATCH));
-        }
-
-        if (StringUtils.isNotBlank(codIsbn)) {
-            spec.add(new SearchStatement(Consts.ISBN, codIsbn, SearchOperation.MATCH));
-        }
-
-        if (rate != null) {
-            spec.add(new SearchStatement(Consts.RATE, rate, SearchOperation.EQUAL));
-        }
-
-        if (visible != null) {
-            spec.add(new SearchStatement(Consts.VISIBLE, visible, SearchOperation.EQUAL));
-        }
-
-        return repository.findAll(spec, pageable);
-    }
-
 }

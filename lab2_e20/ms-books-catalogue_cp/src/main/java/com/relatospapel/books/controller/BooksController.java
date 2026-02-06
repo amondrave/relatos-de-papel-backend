@@ -1,9 +1,9 @@
 package com.relatospapel.books.controller;
 
-import java.time.LocalDate;
 import java.util.Map;
 
 import com.relatospapel.books.controller.model.BookDto;
+import com.relatospapel.books.controller.model.BookSearchRequest;
 import com.relatospapel.books.controller.model.ErrorResponse;
 import com.relatospapel.books.data.model.Book;
 import io.swagger.v3.oas.annotations.Operation;
@@ -16,7 +16,6 @@ import jakarta.validation.Valid;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -45,25 +44,11 @@ public class BooksController {
             content = @Content(mediaType = "application/json", schema = @Schema(implementation = Book.class)))
     public ResponseEntity<Page<Book>> getBooks(
             @RequestHeader Map<String, String> headers,
-            @Parameter(name = "title", description = "Título del libro. No tiene por qué ser exacto", example = "Cien años de soledad", required = false)
-            @RequestParam(required = false) String title,
-            @Parameter(name = "author", description = "Autor del libro. No tiene por qué ser exacto", example = "Gabriel García Márquez", required = false)
-            @RequestParam(required = false) String author,
-            @Parameter(name = "publicationDate", description = "Fecha de publicación del libro", example = "2020-01-15", required = false)
-            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate publicationDate,
-            @Parameter(name = "category", description = "Categoría del libro. No tiene por qué ser exacta", example = "Ficción", required = false)
-            @RequestParam(required = false) String category,
-            @Parameter(name = "codIsbn", description = "Código ISBN del libro", example = "978-3-16-148410-0", required = false)
-            @RequestParam(required = false) String codIsbn,
-            @Parameter(name = "rate", description = "Calificación del libro (0-5)", example = "4.5", required = false)
-            @RequestParam(required = false) Double rate,
-            @Parameter(name = "visible", description = "Estado de visibilidad del libro", example = "true", required = false)
-            @RequestParam(required = false) Boolean visible,
+            @Parameter(hidden = true) BookSearchRequest request,
             @PageableDefault(size = 10, sort = "id") Pageable pageable) {
 
         log.info("headers: {}", headers);
-        Page<Book> books = service.getBooks(title, author, publicationDate, category, codIsbn, rate, visible, pageable);
-
+        Page<Book> books = service.getBooks(request, pageable);
         return ResponseEntity.ok(books);
     }
 

@@ -15,9 +15,11 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import com.relatospapel.books.controller.model.CreateBookRequest;
+import org.springframework.web.server.ResponseStatusException;
 
 @Service
 @RequiredArgsConstructor
@@ -81,6 +83,13 @@ public class BooksServiceImpl implements BooksService {
 				JsonMergePatch jsonMergePatch = JsonMergePatch.fromJson(objectMapper.readTree(request));
 				JsonNode target = jsonMergePatch.apply(objectMapper.readTree(objectMapper.writeValueAsString(book)));
 				Book patched = objectMapper.treeToValue(target, Book.class);
+                if (patched.getTitle() != null &&
+                        repository.existsByTitleAndIdNot(patched.getTitle(), patched.getId())) {
+                    throw new ResponseStatusException(
+                            HttpStatus.CONFLICT,
+                            "Ya existe un libro con ese título"
+                    );
+                }
 				repository.save(patched);
 				return patched;
 			} catch (JsonProcessingException | JsonPatchException e) {

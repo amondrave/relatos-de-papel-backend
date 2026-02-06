@@ -20,6 +20,10 @@ public class BookRepository {
 
     private final BookJpaRepository repository;
 
+    public boolean existsByTitleAndIdNot(String title, Long id) {
+        return repository.existsByTitleAndIdNot(title, id);
+    }
+
     public Page<Book> getBooks(BookSearchRequest filters, Pageable pageable) {
         if (filters == null || !filters.isEmpty()) {
             return repository.findAll(pageable);

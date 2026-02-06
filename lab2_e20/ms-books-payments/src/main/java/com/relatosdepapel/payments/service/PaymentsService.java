@@ -64,16 +64,21 @@ public class PaymentsService {
   }
  }
 
- @Transactional(readOnly = true)
- public List<PaymentResponse> list() {
-  return repo.findAll().stream()
-      .map(p -> new PaymentResponse(p.getId(), p.getBooks(), p.getCustomer(), p.getCreatedAt()))
-      .toList();
- }
+    @Transactional(readOnly = true)
+    public List<PaymentResponse> list() {
+        return repo.findAll().stream()
+                .map(p -> new PaymentResponse(
+                        p.getId(),
+                        List.copyOf(p.getBooks()),
+                        p.getCustomer(),
+                        p.getCreatedAt()
+                ))
+                .toList();
+    }
 
  @Transactional(readOnly = true)
  public PaymentResponse get(Long id) {
   Payment p = repo.findById(id).orElseThrow(() -> new NotFoundException("Compra no encontrada: " + id));
-  return new PaymentResponse(p.getId(), p.getBooks(), p.getCustomer(), p.getCreatedAt());
+  return new PaymentResponse(p.getId(), List.copyOf(p.getBooks()), p.getCustomer(), p.getCreatedAt());
  }
 }
